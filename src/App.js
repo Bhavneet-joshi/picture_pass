@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Home from './pages/Home';
+import Navigation from './components/navbar/Navbar';
+import SoloMovie from './pages/SoloMovie';
+import Pagetemplate from './pages/PageTemplate';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/movies/:id' element={<SoloMovie url="/movie" />} />
+          <Route exact path='/tv/:id' element={<SoloMovie url="/tv" type="tv" />} />
+          <Route exact path='/tvShow' element={<> <Navigation /> <Pagetemplate url="discover/tv" type="tv" /> </>} />
+          <Route exact path='/movies' element={<>  <Navigation /> <Pagetemplate url="discover/movie" /> </>} />
+          <Route exact path='/plays' element={<>  <Navigation /> <Pagetemplate url="movie/now_playing" /> </>} />
+          
+        </Routes>
+       
+      </Router>
+
+    </>
   );
 }
 
