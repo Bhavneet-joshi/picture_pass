@@ -3,7 +3,6 @@ import React from 'react'
 import Navigation from '../components/navbar/Navbar';
 import Banner from '../components/carousel/Banner_carousel';
 import CrouselTemplate from '../components/carousel/Carousel_template';
-
 import Footter from '../components/fotter/Footer';
 export default function Home() {
     return (
