@@ -81,7 +81,7 @@ export default function Pagetemplate(props) {
     images.map((image) => {
       return (
         <Link to={props.type === "tv" ? `/tv/${image.id}` : `/movies/${image.id}`} onClick={onTop} className='sm:px-5 px-2 md:w-52 lg:w-64 sm:w-44 w-40 mx-auto  outline-none mt-5 ' key={image.id}>
-                                <img className='lg:h-72 lg:w-64  rounded-t cursor-pointer' src={`https://image.tmdb.org/t/p/w500/${image.poster_path}`} alt="" />
+                                <img className='lg:h-72 lg:w-64  rounded-t cursor-pointer' src={`https://image.tmdb.org/t/p/w500/${image.poster_path}`} alt={image.name} />
                                 <div className='bg-slate-950 rounded-b text-white p-2 gap-1 flex '>
                                     <div className=' py-1 text-green-600 text-xl'>
                                         <AiFillStar />

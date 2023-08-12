@@ -9,7 +9,7 @@ export default function Navigation() {
     const NavLg = () => {
         return (
             <>
-                <div className='flex j bg-dark_grey-700 '>
+                <div className='flex justify-around py-4 bg-dark_grey-700 '>
                     <div className='flex gap-2'>
                         <img src="../logo.png" className='w-12' alt="" />
                         <div className='flex '>
