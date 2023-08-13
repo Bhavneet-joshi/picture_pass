@@ -82,7 +82,7 @@ export default function SoloMovie(props) {
       }
     };
     fetchData();
-  }, []);
+  }, [URL, id, props.url]);
 
   const LgSize = () => (
     <>
