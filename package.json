@@ -1,5 +1,7 @@
+
 {
   "name": "picture_pass",
+  "homepage": "/Bhavneet-joshi.github.io/Picture_Pass.git/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,8 +30,6 @@
     "deploy": "gh-pages -d build",
     "postdeploy": "rd /s /q build"
   },
-  
-  
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -239,7 +239,8 @@ export default function SoloMovie(props) {
       </div>
       <div className="z-10 fixed w-full bottom-0 bg-white pb-2 rounded-t">
         <button className="bg-red-600 text-white py-2 mb-2  w-full rounded " onClick={RazerPay}>Book Now</button>
-        <div className=" flex justify-around">
+        <div className=" className='z-10 bg-gradient-to-r from-cyan-300 to-blue-300 fixed w-full bottom-0  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 border border-black
+ flex justify-around rounded-full p-3'">
           <Link to="/">
             <div className="text-black text-3xl">
               <AiFillHome />
@@ -266,6 +267,7 @@ export default function SoloMovie(props) {
           </Link>
         </div>
       </div>
+     
     </>
   );
   return (
