@@ -1,6 +1,45 @@
-# Getting Started with Create React App
+# Picture Pass - Explore and Book Movies, Plays, and TV Shows
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Picture Pass repository! Picture Pass is a React-based website that allows users to explore different films, plays, and TV shows, and book tickets for their favorite entertainment options. The app utilizes The Movies Database (TMDB) API for fetching data and the Pazor API for the payment gateway.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Usage](#usage)
+- [APIs Used](#apis-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Picture Pass is designed to provide users with an easy and interactive way to explore various entertainment options, including movies, plays, and TV shows. Users can browse through a wide range of options, view details, and book tickets seamlessly.
+
+## Features
+
+- Browse and search for movies, plays, and TV shows.
+- View detailed information about each entertainment option.
+- Book tickets for selected shows or movies.
+- Integrated payment gateway using Pazor API for secure transactions.
+- User-friendly interface with responsive design.
+
+## Technologies Used
+
+- React: Frontend framework for building the user interface.
+- The Movies Database (TMDB) API: Fetches data about movies, plays, and TV shows.
+- Pazor API: Integrates the payment gateway for secure transactions.
+- HTML, CSS, and JavaScript: Core technologies for building the app's frontend.
+- Bootstrap: Provides styling and responsive design components.
+
+## Setup
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/your-username/picture-pass.git
+   cd picture-pass
 
 ## Available Scripts
 
